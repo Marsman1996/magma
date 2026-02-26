@@ -17,4 +17,4 @@ $CC $CFLAGS -D"MAGMA_STORAGE=\"$MAGMA_STORAGE\"" -c "$MAGMA/src/storage.c" \
     -fPIC -I "$MAGMA/src/" -o "$OUT/storage.o" $LDFLAGS
 
 $LD -r "$OUT/canary.o" "$OUT/storage.o" -o "$OUT/magma.o"
-rm "$OUT/canary.o" "$OUT/storage.o"
+# rm "$OUT/canary.o" "$OUT/storage.o"

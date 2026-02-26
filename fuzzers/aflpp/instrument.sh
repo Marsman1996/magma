@@ -23,7 +23,7 @@ export CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 (
     export OUT="$OUT/afl"
     export LDFLAGS="$LDFLAGS -L$OUT"
-
+    mkdir -p $OUT
     "$MAGMA/build.sh"
     "$TARGET/build.sh"
 )
